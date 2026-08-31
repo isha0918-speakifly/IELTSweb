@@ -1,0 +1,1839 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IELTS Band 6+ Score Check | Speakifly</title>
+
+<meta name="description" content="A 2-Day Live IELTS Speaking & Writing Intensive with Isha Shah. Find out exactly what is keeping you below Band 6.">
+
+<style>
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap');
+
+:root {
+    --navy: #10145c;
+    --navy-dark: #080b3c;
+    --blue-light: #f1f2ff;
+    --yellow: #f5c84c;
+    --green: #15855b;
+    --black: #111218;
+    --grey: #656875;
+    --light: #f8f8fb;
+    --white: #ffffff;
+    --border: #e8e8ef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    color: var(--black);
+    background: var(--white);
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Manrope', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: min(1120px, 92%);
+    margin: auto;
+}
+
+/* TOP BAR */
+
+.topbar {
+    background: var(--navy-dark);
+    color: white;
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: .3px;
+}
+
+/* NAVIGATION */
+
+nav {
+    background: rgba(255,255,255,.95);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(10px);
+}
+
+.nav-inner {
+    height: 72px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 145px;
+    height: auto;
+}
+
+.nav-button {
+    background: var(--navy);
+    color: white;
+    padding: 11px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 800;
+}
+
+/* HERO */
+
+.hero {
+    background:
+        radial-gradient(circle at 90% 20%, #e9eaff 0, transparent 30%),
+        linear-gradient(135deg, #f7f7ff, #ffffff);
+    padding: 65px 0 80px;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.08fr .92fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: #ededff;
+    color: var(--navy);
+    padding: 9px 14px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.badge-dot {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: #e55345;
+}
+
+.hero h1 {
+    font-size: clamp(43px, 6vw, 72px);
+    line-height: .98;
+    letter-spacing: -3px;
+    color: var(--navy);
+    margin: 22px 0;
+}
+
+.hero h1 span {
+    color: #2b3294;
+}
+
+.hero-text {
+    font-size: 19px;
+    color: var(--grey);
+    max-width: 650px;
+    margin-bottom: 25px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.detail {
+    background: white;
+    border: 1px solid var(--border);
+    padding: 10px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.price-area {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price {
+    font-family: 'Manrope', sans-serif;
+    color: var(--navy);
+    font-size: 47px;
+    font-weight: 800;
+    letter-spacing: -2px;
+}
+
+.price small {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    color: var(--grey);
+    letter-spacing: 0;
+}
+
+.cta {
+    display: inline-block;
+    background: var(--navy);
+    color: white;
+    border: none;
+    padding: 16px 25px;
+    border-radius: 13px;
+    font-size: 15px;
+    font-weight: 900;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.cta:hover {
+    transform: translateY(-2px);
+    background: var(--navy-dark);
+}
+
+.hero-note {
+    margin-top: 12px;
+    color: #7b7d88;
+    font-size: 12px;
+}
+
+/* PHOTO */
+
+.photo-area {
+    position: relative;
+}
+
+.photo-card {
+    background: white;
+    padding: 11px;
+    border-radius: 27px;
+    box-shadow: 0 25px 70px rgba(16,20,92,.16);
+    transform: rotate(1deg);
+}
+
+.trainer-photo {
+    width: 100%;
+    display: block;
+    border-radius: 20px;
+    aspect-ratio: 4 / 5;
+    object-fit: cover;
+    object-position: center 42%;
+}
+
+.score-bubble {
+    position: absolute;
+    bottom: 30px;
+    left: -25px;
+    background: var(--navy);
+    color: white;
+    padding: 15px 20px;
+    border-radius: 17px;
+    box-shadow: 0 15px 35px rgba(0,0,0,.2);
+}
+
+.score-bubble strong {
+    display: block;
+    font-family: 'Manrope';
+    font-size: 28px;
+}
+
+.score-bubble span {
+    font-size: 11px;
+    color: #d9dbff;
+}
+
+/* SECTIONS */
+
+section {
+    padding: 80px 0;
+}
+
+.section-label {
+    color: var(--navy);
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 1.5px;
+}
+
+.section-title {
+    font-size: clamp(34px, 4vw, 52px);
+    line-height: 1.05;
+    color: var(--navy);
+    letter-spacing: -2px;
+    margin: 10px 0 15px;
+}
+
+.section-text {
+    font-size: 18px;
+    color: var(--grey);
+    max-width: 720px;
+}
+
+/* PROBLEM */
+
+.problem {
+    background: white;
+}
+
+.problem-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    margin-top: 35px;
+}
+
+.problem-card {
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.problem-card h3 {
+    font-size: 22px;
+    margin-bottom: 9px;
+}
+
+.problem-card p {
+    color: var(--grey);
+}
+
+.big-message {
+    margin-top: 20px;
+    background: var(--navy);
+    color: white;
+    border-radius: 20px;
+    padding: 28px;
+    font-size: 22px;
+    font-weight: 800;
+}
+
+.big-message span {
+    color: var(--yellow);
+}
+
+/* WORKSHOP */
+
+.workshop {
+    background: var(--navy);
+}
+
+.workshop .section-label,
+.workshop .section-title {
+    color: white;
+}
+
+.workshop .section-text {
+    color: #d9dbef;
+}
+
+.days {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.day {
+    background: white;
+    border-radius: 23px;
+    padding: 30px;
+}
+
+.day-label {
+    color: var(--navy);
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.day h3 {
+    font-size: 28px;
+    color: var(--navy);
+    margin: 8px 0 20px;
+}
+
+.day ul {
+    list-style: none;
+}
+
+.day li {
+    margin-bottom: 12px;
+    color: #454751;
+    padding-left: 27px;
+    position: relative;
+}
+
+.day li:before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 900;
+}
+
+/* CRITERIA */
+
+.criteria {
+    background: #f7f7fb;
+}
+
+.criteria-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 22px;
+    margin-top: 35px;
+}
+
+.criteria-card {
+    background: white;
+    border: 1px solid var(--border);
+    border-radius: 22px;
+    padding: 28px;
+}
+
+.criteria-card h3 {
+    color: var(--navy);
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+.criteria-item {
+    padding: 14px 0;
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.criteria-item strong {
+    font-size: 14px;
+}
+
+.criteria-item span {
+    color: var(--grey);
+    font-size: 13px;
+    text-align: right;
+}
+
+/* TAKEAWAYS */
+
+.takeaways {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+.takeaway-box {
+    background: var(--light);
+    border-radius: 22px;
+    padding: 30px;
+}
+
+.takeaway-box h3 {
+    color: var(--navy);
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.takeaway-box ul {
+    list-style: none;
+}
+
+.takeaway-box li {
+    padding: 8px 0;
+    font-weight: 600;
+}
+
+.takeaway-box li:before {
+    content: "✓";
+    color: var(--green);
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+/* TRAINER */
+
+.trainer {
+    background: white;
+}
+
+.trainer-grid {
+    display: grid;
+    grid-template-columns: .7fr 1.3fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.trainer-image {
+    width: 100%;
+    border-radius: 25px;
+    box-shadow: 0 20px 55px rgba(0,0,0,.12);
+}
+
+.trainer-copy h2 {
+    margin-top: 8px;
+}
+
+.trainer-copy p {
+    color: var(--grey);
+    margin: 15px 0;
+}
+
+/* REGISTER */
+
+.register {
+    background: linear-gradient(135deg,#f0f1ff,#ffffff);
+}
+
+.register-grid {
+    display: grid;
+    grid-template-columns: .85fr 1.15fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.offer {
+    background: var(--navy);
+    color: white;
+    border-radius: 25px;
+    padding: 34px;
+    position: sticky;
+    top: 95px;
+}
+
+.offer h2 {
+    color: white;
+    font-size: 40px;
+    line-height: 1.05;
+    margin: 12px 0;
+}
+
+.offer-price {
+    font-family: 'Manrope';
+    font-size: 58px;
+    font-weight: 800;
+    margin: 18px 0 3px;
+}
+
+.offer-price-sub {
+    color: #d8d9ee;
+    font-size: 13px;
+}
+
+.offer ul {
+    list-style: none;
+    margin-top: 25px;
+}
+
+.offer li {
+    margin-bottom: 12px;
+}
+
+.offer li:before {
+    content: "✓";
+    color: var(--yellow);
+    font-weight: 900;
+    margin-right: 10px;
+}
+
+.form-card {
+    background: white;
+    border-radius: 25px;
+    padding: 32px;
+    box-shadow: 0 20px 55px rgba(16,20,92,.1);
+}
+
+.form-card h3 {
+    font-size: 28px;
+    color: var(--navy);
+}
+
+.form-description {
+    color: var(--grey);
+    margin: 5px 0 20px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 800;
+    margin: 14px 0 7px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 14px;
+    border: 1px solid #dedfe7;
+    border-radius: 12px;
+    background: white;
+    font-family: inherit;
+    font-size: 15px;
+    outline: none;
+}
+
+input:focus,
+select:focus {
+    border-color: var(--navy);
+    box-shadow: 0 0 0 3px #ebecff;
+}
+
+.form-button {
+    width: 100%;
+    margin-top: 22px;
+}
+
+.form-small {
+    color: #777985;
+    font-size: 11px;
+    margin-top: 12px;
+    text-align: center;
+}
+
+/* PAYMENT */
+
+.payment-message {
+    display: none;
+    margin-top: 20px;
+    background: #effff7;
+    border: 1px solid #bcebd6;
+    border-radius: 15px;
+    padding: 20px;
+    color: #146842;
+}
+
+.payment-message h4 {
+    font-size: 20px;
+    margin-bottom: 7px;
+}
+
+.whatsapp-button {
+    display: inline-block;
+    margin-top: 15px;
+    background: #168a5b;
+    color: white;
+    padding: 13px 19px;
+    border-radius: 11px;
+    font-weight: 900;
+}
+
+/* FAQ */
+
+.faq {
+    max-width: 850px;
+    margin: auto;
+}
+
+.faq details {
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    margin: 10px 0;
+    padding: 0 18px;
+    background: white;
+}
+
+.faq summary {
+    cursor: pointer;
+    padding: 18px 0;
+    font-weight: 800;
+    color: var(--navy);
+}
+
+.answer {
+    color: var(--grey);
+    padding-bottom: 18px;
+}
+
+/* FOOTER */
+
+footer {
+    background: var(--navy-dark);
+    color: white;
+    padding: 40px 0 100px;
+}
+
+.footer-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-logo {
+    width: 140px;
+    background: white;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.footer-text {
+    font-size: 13px;
+    color: #cfd1e5;
+}
+
+/* MOBILE CTA */
+
+.mobile-cta {
+    display: none;
+    position: fixed;
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    background: var(--navy);
+    color: white;
+    padding: 15px;
+    text-align: center;
+    border-radius: 14px;
+    font-weight: 900;
+    z-index: 999;
+    box-shadow: 0 10px 35px rgba(0,0,0,.25);
+}
+
+/* MOBILE */
+
+@media(max-width: 850px) {
+
+    .hero-grid,
+    .days,
+    .criteria-grid,
+    .takeaways,
+    .trainer-grid,
+    .register-grid,
+    .problem-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero {
+        padding: 45px 0 60px;
+    }
+
+    .hero h1 {
+        font-size: 48px;
+        letter-spacing: -2px;
+    }
+
+    .hero-text {
+        font-size: 17px;
+    }
+
+    .photo-area {
+        max-width: 550px;
+        margin: auto;
+    }
+
+    .score-bubble {
+        left: 10px;
+    }
+
+    .offer {
+        position: static;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    section {
+        padding: 60px 0;
+    }
+
+    .footer-inner {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .mobile-cta {
+        display: block;
+    }
+
+    .nav-button {
+        padding: 9px 14px;
+        font-size: 12px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+<!-- TOP BAR -->
+
+<div class="topbar">
+    LIVE ONLINE WORKSHOP • 5 & 6 SEPTEMBER 2026 • ₹299 FOR BOTH DAYS
+</div>
+
+
+<!-- NAVIGATION -->
+
+<nav>
+
+<div class="container nav-inner">
+
+    <img src="speakifly-logo.png" class="logo" alt="Speakifly">
+
+    <a href="#register" class="nav-button">
+        Reserve My Seat
+    </a>
+
+</div>
+
+</nav>
+
+
+<!-- HERO -->
+
+<header class="hero">
+
+<div class="container hero-grid">
+
+<div>
+
+    <div class="badge">
+        <span class="badge-dot"></span>
+        IELTS BAND 6+ SCORE CHECK
+    </div>
+
+    <h1>
+        Find out what's <span>actually</span> keeping you below Band 6.
+    </h1>
+
+    <p class="hero-text">
+        A focused 2-day live Speaking & Writing intensive for IELTS aspirants who want to understand their weaknesses, practise the right way and know exactly what to improve.
+    </p>
+
+    <div class="details">
+
+        <div class="detail">
+            🎙 Day 1 — Speaking
+        </div>
+
+        <div class="detail">
+            ✍️ Day 2 — Writing
+        </div>
+
+        <div class="detail">
+            💻 Live Online
+        </div>
+
+        <div class="detail">
+            👩‍🏫 Isha Shah
+        </div>
+
+    </div>
+
+    <div class="price-area">
+
+        <div class="price">
+            ₹299
+            <small>/ both days</small>
+        </div>
+
+        <a href="#register" class="cta">
+            RESERVE MY SEAT →
+        </a>
+
+    </div>
+
+    <p class="hero-note">
+        Designed to help you understand the Band 6+ benchmark. No score guarantee.
+    </p>
+
+</div>
+
+
+<div class="photo-area">
+
+    <div class="photo-card">
+
+        <img
+            src="isha-photo.png"
+            class="trainer-photo"
+            alt="Isha Shah — Speakifly"
+        >
+
+    </div>
+
+    <div class="score-bubble">
+
+        <strong>6+</strong>
+
+        <span>
+            Understand the target.<br>
+            Stop guessing.
+        </span>
+
+    </div>
+
+</div>
+
+</div>
+
+</header>
+
+
+<!-- PROBLEM -->
+
+<section class="problem">
+
+<div class="container">
+
+    <div class="section-label">
+        THE PROBLEM
+    </div>
+
+    <h2 class="section-title">
+        Still getting 5 or 5.5?
+    </h2>
+
+    <p class="section-text">
+        You can watch hundreds of IELTS videos, memorise vocabulary and practise endlessly — and still not know what is actually costing you marks.
+    </p>
+
+
+    <div class="problem-grid">
+
+        <div class="problem-card">
+
+            <h3>
+                “I know English. Why am I stuck?”
+            </h3>
+
+            <p>
+                IELTS doesn't only test whether you know English. It evaluates how effectively you use it under specific assessment criteria.
+            </p>
+
+        </div>
+
+
+        <div class="problem-card">
+
+            <h3>
+                “What exactly should I fix?”
+            </h3>
+
+            <p>
+                More essays and more speaking practice won't help much if you keep repeating the same mistakes without knowing what they are.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="big-message">
+
+        Stop guessing.
+        <span>Understand your gaps.</span>
+        Practise with purpose.
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- WORKSHOP -->
+
+<section class="workshop">
+
+<div class="container">
+
+    <div class="section-label">
+        THE 2-DAY INTENSIVE
+    </div>
+
+    <h2 class="section-title">
+        Speaking on Saturday. Writing on Sunday.
+    </h2>
+
+    <p class="section-text">
+        Two separate live sessions so each module gets the attention it deserves.
+    </p>
+
+
+    <div class="days">
+
+
+        <!-- DAY 1 -->
+
+        <div class="day">
+
+            <div class="day-label">
+                DAY 01 • SATURDAY • 5 SEPTEMBER • 9:00 PM
+            </div>
+
+            <h3>
+                🎙 Speaking Score Check
+            </h3>
+
+            <ul>
+
+                <li>
+                    Understand what Band 6 actually sounds like
+                </li>
+
+                <li>
+                    Build stronger Part 1 answers
+                </li>
+
+                <li>
+                    Handle Part 2 for two minutes
+                </li>
+
+                <li>
+                    Develop stronger Part 3 answers
+                </li>
+
+                <li>
+                    Identify fluency problems
+                </li>
+
+                <li>
+                    Improve grammar and vocabulary
+                </li>
+
+                <li>
+                    Understand pronunciation issues
+                </li>
+
+                <li>
+                    Practise IELTS-style questions
+                </li>
+
+            </ul>
+
+        </div>
+
+
+        <!-- DAY 2 -->
+
+        <div class="day">
+
+            <div class="day-label">
+                DAY 02 • SUNDAY • 6 SEPTEMBER • 11:00 AM
+            </div>
+
+            <h3>
+                ✍️ Writing Score Check
+            </h3>
+
+            <ul>
+
+                <li>
+                    Understand the four Writing criteria
+                </li>
+
+                <li>
+                    Why essays often remain at 5–5.5
+                </li>
+
+                <li>
+                    Improve Task Response
+                </li>
+
+                <li>
+                    Develop ideas effectively
+                </li>
+
+                <li>
+                    Improve Coherence & Cohesion
+                </li>
+
+                <li>
+                    Use vocabulary naturally
+                </li>
+
+                <li>
+                    Reduce common grammar errors
+                </li>
+
+                <li>
+                    Analyse sample answers
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- SCORING -->
+
+<section class="criteria">
+
+<div class="container">
+
+    <div class="section-label">
+        KNOW THE SCORING
+    </div>
+
+    <h2 class="section-title">
+        Understand what the examiner is looking for.
+    </h2>
+
+    <p class="section-text">
+        Instead of memorising random IELTS tricks, learn to look at your performance through the criteria that matter.
+    </p>
+
+
+    <div class="criteria-grid">
+
+
+        <div class="criteria-card">
+
+            <h3>
+                🎙 Speaking
+            </h3>
+
+            <div class="criteria-item">
+                <strong>Fluency & Coherence</strong>
+                <span>Can you develop answers naturally?</span>
+            </div>
+
+            <div class="criteria-item">
+                <strong>Lexical Resource</strong>
+                <span>Are your words accurate and varied?</span>
+            </div>
+
+            <div class="criteria-item">
+                <strong>Grammar</strong>
+                <span>Can you use a range with reasonable accuracy?</span>
+            </div>
+
+            <div class="criteria-item">
+                <strong>Pronunciation</strong>
+                <span>Can you be understood clearly?</span>
+            </div>
+
+        </div>
+
+
+        <div class="criteria-card">
+
+            <h3>
+                ✍️ Writing
+            </h3>
+
+            <div class="criteria-item">
+                <strong>Task Response</strong>
+                <span>Did you answer and develop the task?</span>
+            </div>
+
+            <div class="criteria-item">
+                <strong>Coherence & Cohesion</strong>
+                <span>Are ideas organised clearly?</span>
+            </div>
+
+            <div class="criteria-item">
+                <strong>Lexical Resource</strong>
+                <span>Is vocabulary appropriate?</span>
+            </div>
+
+            <div class="criteria-item">
+                <strong>Grammar</strong>
+                <span>How accurate is your writing?</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- TAKEAWAYS -->
+
+<section>
+
+<div class="container">
+
+    <div class="section-label">
+        YOUR TAKEAWAY
+    </div>
+
+    <h2 class="section-title">
+        Leave knowing what to work on next.
+    </h2>
+
+    <p class="section-text">
+        This isn't designed to be another three hours of someone talking at you.
+    </p>
+
+
+    <div class="takeaways">
+
+        <div class="takeaway-box">
+
+            <h3>
+                After the workshop, you'll know:
+            </h3>
+
+            <ul>
+
+                <li>Where you are losing marks</li>
+                <li>What Band 6+ actually requires</li>
+                <li>Your most important weaknesses</li>
+                <li>What mistakes you need to stop making</li>
+                <li>How to approach Speaking answers</li>
+                <li>How to approach Writing responses</li>
+
+            </ul>
+
+        </div>
+
+
+        <div class="takeaway-box">
+
+            <h3>
+                You'll also get:
+            </h3>
+
+            <ul>
+
+                <li>IELTS-style practice</li>
+                <li>Band 6+ checklist</li>
+                <li>Practical improvement strategies</li>
+                <li>Workshop notes/material</li>
+                <li>Live Q&A</li>
+                <li>A clear next-step improvement plan</li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- TRAINER -->
+
+<section class="trainer">
+
+<div class="container trainer-grid">
+
+    <div>
+
+        <img
+            src="isha-photo.png"
+            class="trainer-image"
+            alt="Isha Shah"
+        >
+
+    </div>
+
+
+    <div class="trainer-copy">
+
+        <div class="section-label">
+            YOUR TRAINER
+        </div>
+
+        <h2 class="section-title">
+            Meet Isha Shah.
+        </h2>
+
+        <p>
+            Isha Shah is the trainer behind Speakifly. Her approach is simple: make English and IELTS easier to understand, then turn that understanding into practical performance.
+        </p>
+
+        <p>
+            This workshop deliberately focuses on two modules — Speaking and Writing — because these are areas where students often need more than just information. They need to understand their mistakes and know how to improve them.
+        </p>
+
+        <p>
+            <strong>
+                No unrealistic promises. No guaranteed scores. Just a focused workshop designed around the Band 6+ goal.
+            </strong>
+        </p>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- REGISTRATION -->
+
+<section class="register" id="register">
+
+<div class="container register-grid">
+
+
+    <!-- OFFER -->
+
+    <div class="offer">
+
+        <div style="font-size:12px;font-weight:900;letter-spacing:1px;text-transform:uppercase;">
+            2-DAY LIVE INTENSIVE
+        </div>
+
+        <h2>
+            Ready to find your gaps?
+        </h2>
+
+        <div class="offer-price">
+            ₹299
+        </div>
+
+        <div class="offer-price-sub">
+            One payment • Both sessions
+        </div>
+
+        <ul>
+
+            <li>
+                Speaking — 5 September, 9 PM
+            </li>
+
+            <li>
+                Writing — 6 September, 11 AM
+            </li>
+
+            <li>
+                Live online access
+            </li>
+
+            <li>
+                Practical exercises
+            </li>
+
+            <li>
+                Workshop material
+            </li>
+
+            <li>
+                Q&A
+            </li>
+
+        </ul>
+
+    </div>
+
+
+    <!-- FORM -->
+
+    <div class="form-card">
+
+        <h3>
+            Reserve your seat
+        </h3>
+
+        <p class="form-description">
+            Tell us a little about yourself. After submitting, you'll be taken to the secure payment page.
+        </p>
+
+
+        <form id="registrationForm">
+
+            <div class="form-row">
+
+                <div>
+
+                    <label for="name">
+                        Full Name *
+                    </label>
+
+                    <input
+                        type="text"
+                        id="name"
+                        placeholder="Your full name"
+                        required
+                    >
+
+                </div>
+
+
+                <div>
+
+                    <label for="phone">
+                        WhatsApp Number *
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        placeholder="10-digit number"
+                        maxlength="10"
+                        required
+                    >
+
+                </div>
+
+            </div>
+
+
+            <label for="email">
+                Email Address *
+            </label>
+
+            <input
+                type="email"
+                id="email"
+                placeholder="you@example.com"
+                required
+            >
+
+
+            <div class="form-row">
+
+                <div>
+
+                    <label for="currentScore">
+                        Current IELTS Level *
+                    </label>
+
+                    <select id="currentScore" required>
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option>
+                            Haven't taken IELTS
+                        </option>
+
+                        <option>
+                            Below Band 5
+                        </option>
+
+                        <option>
+                            Band 5
+                        </option>
+
+                        <option>
+                            Band 5.5
+                        </option>
+
+                        <option>
+                            Band 6
+                        </option>
+
+                        <option>
+                            Band 6.5+
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <div>
+
+                    <label for="targetScore">
+                        Target Band *
+                    </label>
+
+                    <select id="targetScore" required>
+
+                        <option value="">
+                            Select
+                        </option>
+
+                        <option>Band 6</option>
+                        <option>Band 6.5</option>
+                        <option>Band 7</option>
+                        <option>Band 7.5</option>
+                        <option>Band 8+</option>
+
+                    </select>
+
+                </div>
+
+            </div>
+
+
+            <label for="weakness">
+                Biggest Challenge *
+            </label>
+
+            <select id="weakness" required>
+
+                <option value="">
+                    Select
+                </option>
+
+                <option>
+                    Speaking
+                </option>
+
+                <option>
+                    Writing
+                </option>
+
+                <option>
+                    Both
+                </option>
+
+            </select>
+
+
+            <button
+                type="submit"
+                class="cta form-button"
+            >
+                CONTINUE TO PAYMENT — ₹299 →
+            </button>
+
+
+            <p class="form-small">
+                Your information is used for workshop registration and communication.
+            </p>
+
+        </form>
+
+
+        <!-- PAYMENT MESSAGE -->
+
+        <div
+            id="paymentMessage"
+            class="payment-message"
+        >
+
+            <h4>
+                You're almost there! 🎉
+            </h4>
+
+            <p>
+                Your details have been prepared. Complete the ₹299 payment in the Razorpay window, then return here and tap WhatsApp to receive your workshop details.
+            </p>
+
+            <a
+                id="whatsappButton"
+                class="whatsapp-button"
+                target="_blank"
+            >
+                GET WORKSHOP DETAILS ON WHATSAPP →
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- FAQ -->
+
+<section>
+
+<div class="container faq">
+
+    <div class="section-label">
+        QUESTIONS
+    </div>
+
+    <h2 class="section-title">
+        Frequently asked.
+    </h2>
+
+
+    <details>
+
+        <summary>
+            Is this a complete IELTS course?
+        </summary>
+
+        <div class="answer">
+            No. This is a focused 2-day workshop covering Speaking and Writing. It is designed to help you understand your gaps and what you should work on next.
+        </div>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Can beginners attend?
+        </summary>
+
+        <div class="answer">
+            Yes. The workshop is suitable for IELTS aspirants with basic English who want to understand how to improve their Speaking and Writing performance.
+        </div>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Will I be guaranteed Band 6?
+        </summary>
+
+        <div class="answer">
+            No. No honest trainer can guarantee your final IELTS score. The workshop is designed to help you understand the Band 6+ benchmark and identify areas you need to improve.
+        </div>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            Do I need to attend both days?
+        </summary>
+
+        <div class="answer">
+            Yes. Speaking is covered on Saturday, 5 September at 9 PM, and Writing is covered on Sunday, 6 September at 11 AM.
+        </div>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            How will I receive the workshop details?
+        </summary>
+
+        <div class="answer">
+            After completing your payment, contact Speakifly on WhatsApp. You will receive the workshop access details and instructions there.
+        </div>
+
+    </details>
+
+
+    <details>
+
+        <summary>
+            I have already taken IELTS and got 5 or 5.5. Is this for me?
+        </summary>
+
+        <div class="answer">
+            Yes. Students who have already attempted IELTS and are unsure why their score isn't improving are one of the main audiences this workshop is designed for.
+        </div>
+
+    </details>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<div class="container footer-inner">
+
+    <img
+        src="speakifly-logo.png"
+        class="footer-logo"
+        alt="Speakifly"
+    >
+
+    <div class="footer-text">
+
+        Isha Shah • Speakifly<br>
+        ishashah@speakiflyinstitute.com<br>
+        WhatsApp: +91 81549 85089
+
+    </div>
+
+</div>
+
+</footer>
+
+
+<!-- MOBILE CTA -->
+
+<a
+    href="#register"
+    class="mobile-cta"
+>
+    RESERVE MY SEAT — ₹299
+</a>
+
+
+<script>
+
+/* =========================
+   YOUR PAYMENT LINK
+========================= */
+
+const RAZORPAY_LINK =
+"https://rzp.io/rzp/piLeD89";
+
+
+/* =========================
+   YOUR WHATSAPP NUMBER
+   India country code = 91
+========================= */
+
+const WHATSAPP_NUMBER =
+"918154985089";
+
+
+/* =========================
+   FORM
+========================= */
+
+document
+.getElementById("registrationForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    const name =
+        document.getElementById("name").value.trim();
+
+    const phone =
+        document.getElementById("phone").value.trim();
+
+    const email =
+        document.getElementById("email").value.trim();
+
+    const currentScore =
+        document.getElementById("currentScore").value;
+
+    const targetScore =
+        document.getElementById("targetScore").value;
+
+    const weakness =
+        document.getElementById("weakness").value;
+
+
+    /* PHONE VALIDATION */
+
+    if (!/^[0-9]{10}$/.test(phone)) {
+
+        alert(
+            "Please enter a valid 10-digit WhatsApp number."
+        );
+
+        return;
+
+    }
+
+
+    /* SAVE INFORMATION IN BROWSER */
+
+    const studentData = {
+
+        name: name,
+        phone: phone,
+        email: email,
+        currentScore: currentScore,
+        targetScore: targetScore,
+        weakness: weakness,
+        registrationDate:
+            new Date().toISOString()
+
+    };
+
+
+    localStorage.setItem(
+        "ieltsWorkshopStudent",
+        JSON.stringify(studentData)
+    );
+
+
+    /* WHATSAPP MESSAGE */
+
+    const whatsappMessage =
+
+`Hi Isha, I have registered for the IELTS Band 6+ Score Check workshop.
+
+Name: ${name}
+WhatsApp: ${phone}
+Email: ${email}
+Current IELTS Level: ${currentScore}
+Target Band: ${targetScore}
+Biggest Challenge: ${weakness}
+
+Please send me the workshop details.`;
+
+
+    const whatsappURL =
+        "https://wa.me/" +
+        WHATSAPP_NUMBER +
+        "?text=" +
+        encodeURIComponent(whatsappMessage);
+
+
+    document.getElementById(
+        "whatsappButton"
+    ).href = whatsappURL;
+
+
+    /* SHOW PAYMENT MESSAGE */
+
+    document.getElementById(
+        "paymentMessage"
+    ).style.display = "block";
+
+
+    /* HIDE FORM */
+
+    document.getElementById(
+        "registrationForm"
+    ).style.display = "none";
+
+
+    /* OPEN RAZORPAY */
+
+    window.open(
+        RAZORPAY_LINK,
+        "_blank"
+    );
+
+
+    /* SCROLL TO MESSAGE */
+
+    document
+        .getElementById("paymentMessage")
+        .scrollIntoView({
+            behavior: "smooth",
+            block: "center"
+        });
+
+});
+
+</script>
+
+</body>
+</html>
